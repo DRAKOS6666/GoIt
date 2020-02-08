@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.hidden_title {
+  display: none;
+}
+
 .content {
   margin: auto;
   width: 900px;
