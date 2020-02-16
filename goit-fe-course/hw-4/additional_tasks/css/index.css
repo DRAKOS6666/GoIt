@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+header {
+  margin-left: 2%;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h2 {
+  color: rgb(255, 155, 41);
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: green;
+  text-transform: uppercase;
+  padding-top: 25px;
+}
+
+/* TASK1 */
+
+.task1 {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.nav_list > li {
+  float: left;
+  list-style-type: none;
+  margin-right: 50px;
+  font-family: PlayfairDisplay, Italic, serif;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: left;
+}
+
+.nav_list a {
+  text-decoration: none;
+  color: #626262;
+}
+
+.nav_list a:hover {
+  background-color: green;
+  color: white;
+}
+
+.nav_list :last-child {
+  margin-right: 0;
+}
+
+.task2 {
+  margin: auto;
+  text-align: center;
+  width: 470px;
+}
+
+/* TASK2 */
+
+.task2-list {
+  list-style-type: none;
+  font-size: 20px;
+}
+
+.task2-list > li {
+  text-transform: uppercase;
+  color: #0e1116;
+}
+
+.task2-list li:nth-child(3n - 2) {
+  background-color: #88292f;
+}
+
+.task2-list li:nth-child(3n - 1) {
+  background-color: #5db7de;
+}
+
+.task2-list li:nth-child(3n) {
+  background-color: #0d5d56;
+}
+
+/* TASK3 */
+
+.task3 {
+  width: 470px;
+  text-align: center;
+  margin: auto;
+}
+
+.task3-list > li {
+  font-size: 20px;
+  list-style-type: none;
+  text-transform: uppercase;
+  background-color: thistle;
+}
+
+.task3-list > li::before {
+  content: "\2192";
+  color: red;
+  padding-right: 10px;
+}
+
+/* TASK4 */
+
+.task4 {
+  width: 470px;
+  text-align: center;
+  margin: auto;
+}
+
+.task4-list {
+  counter-reset: count-text;
+}
+
+.task4-list > li {
+  background-color: rgb(215, 243, 93);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  counter-increment: count-text;
+  list-style-type: none;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.task4-list > li:hover {
+  background-color: rgb(240, 11, 11);
+  border-radius: 30%;
+  color: #fff;
+}
+
+.task4-list > li::before {
+  color: rgb(185, 96, 23);
+  line-height: 50px;
+  margin-right: 10px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  content: counter(count-text, upper-roman);
+  width: 50px;
+  height: 50px;
+  background-color: lightgreen;
+}
+
+/* Не работает */
+/* .task4-list > li:before:hover {
+  border-radius: 50%;
+  color: #fff;
+} */
