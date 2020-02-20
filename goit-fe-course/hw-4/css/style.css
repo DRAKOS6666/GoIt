@@ -25,6 +25,10 @@
   padding-bottom: 99px;
 }
 
+.menu {
+  float: right;
+}
+
 .logo {
   float: left;
   font-family: Roboto, serif;
@@ -134,7 +138,7 @@ img {
 .price {
   float: left;
   text-align: center;
-  width: 50px;
+  width: 55px;
   height: 40px;
   font-family: Roboto, serif;
   color: #fff;
