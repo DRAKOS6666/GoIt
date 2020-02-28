@@ -1,0 +1,461 @@
+/* 5 Виды селекторов */
+
+/* Универсальный, обнулит margin у всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Селектор тега */
+p.sel_types_5 {
+  color: white;
+}
+
+/* Селектор класса */
+.text.sel_types_5 {
+  text-transform: uppercase;
+}
+
+/* Селектор идентификатора */
+#main-text {
+  font-size: 24px;
+}
+
+/* Селектор потомка */
+ul.sel_types_5 li {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* Дочерний селектор */
+ul.sel_types_5 > li {
+  color: #067bc2;
+}
+
+/* Сестринский селектор */
+h1.sel_types_5 + p {
+  color: green;
+  font-size: 20px;
+}
+
+/* Селектор атрибута */
+a[href="stuff"] {
+  color: #ca3c25;
+}
+
+/* Селектор псевдокласса */
+a:hover {
+  background-color: #067bc2;
+}
+
+/* Оформление примера */
+div.sel_types_5 a {
+  font-size: 24px;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.black {
+  background-color: #1b1b1e;
+}
+
+.peach {
+  background-color: #edcb96;
+}
+
+.pale {
+  background-color: #f3dad8;
+}
+
+.mikado {
+  background-color: #ecc30b;
+}
+
+/* 5 Группировка селекторов */
+
+.red-text.grouping5 {
+  color: red;
+}
+
+.blue-text.grouping5 {
+  color: blue;
+}
+
+.green-text.grouping5 {
+  color: green;
+}
+
+/* Объявление такого правила распространяется на все селекторы, перечисленные через запятую */
+.red-text.grouping5,
+.blue-text.grouping5,
+.green-text.grouping5 {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+/* 6.3 Спецефичность */
+
+/* 0, 0, 0, 1 */
+p.red-text {
+  color: blue;
+}
+
+/* 0, 0, 0, 2 */
+div.specific6_3 p {
+  color: orange;
+}
+
+/* 0, 0, 1, 0 */
+.red-text {
+  color: red;
+}
+
+/* 0, 0, 1, 1 */
+div .red-text {
+  color: green;
+}
+
+/* 0, 1, 0, 0 */
+#text {
+  color: teal;
+}
+
+/* оформление примера */
+.specific6_3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+/* КОД псевдокласс */
+/* p:hover {
+  text-decoration: underline;
+  transform: rotate(-1deg);
+} */
+
+/* 7.2.1 Content box */
+.content-box {
+  box-sizing: content-box;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+  border: 10px solid #212121;
+  background-color: #009688;
+}
+
+/* 7.2.2 Border Box */
+.border-box {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+  border: 10px solid #212121;
+  background-color: #009688;
+}
+
+/* 8.1 Блочные элементы */
+h1.block8_1 {
+  background-color: #068d9d;
+}
+
+p.block8_1 {
+  background-color: #fca17d;
+}
+
+div.block8_1 {
+  height: 30px;
+  background-color: #e3b505;
+}
+
+ul.block8_1 {
+  background-color: #db504a;
+}
+
+/* 8.2 Строчные Элементы display:inline */
+a.inline_8_2 {
+  background-color: #db504a;
+}
+
+span.inline_8_2 {
+  background-color: #e3b505;
+}
+
+/* 8.4 Преобразование типов элементов */
+.header {
+  height: 60px;
+  margin-bottom: 5px;
+  background-color: #084c61;
+}
+
+.navigation {
+  height: 40px;
+  margin-bottom: 5px;
+  background-color: #e3b505;
+}
+
+.content {
+  display: inline-block;
+  height: 120px;
+  width: 70%;
+  background-color: #2b4162;
+}
+
+.sidebar {
+  display: inline-block;
+  height: 120px;
+  /*  зазор в 4px между строчными элементами обьясняется в статье по ссылке ниже */
+  width: calc(30% - 4px);
+  background-color: #db505a;
+}
+
+.footer {
+  height: 40px;
+  background-color: #0b6e4f;
+}
+
+/* 9.1 Схлопывание вертикальных марджинов */
+.box {
+  width: 200px;
+  height: 100px;
+}
+
+.top-box {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  background-color: #2b4162;
+}
+
+.bottom-box {
+  margin-top: 50px;
+  background-color: #fa9f42;
+}
+
+/* 9.2 Выпадение вертикальных отступов */
+.outer-box.vert_9 {
+  width: 200px;
+  height: 200px;
+  background-color: #2b4162;
+}
+
+.inner-box.vert_9 {
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  background-color: #ff5252;
+}
+/* 10 Выравнивание контента*/
+/* 10.1.1 text-align */
+.text.t-a_10 {
+  margin-top: 5px;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #212121;
+  color: #ffffff;
+}
+
+.box.t-a_10 {
+  text-align: center;
+
+  padding: 10px 0;
+  background-color: #3f51b5;
+}
+
+.inline-box.t-a_10 {
+  display: inline-block;
+  background-color: #009688;
+  color: #ffffff;
+}
+
+/* 10.1.1 margin */
+.outer-box.margin_10 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #004d40;
+}
+
+.inner-box.margin_10 {
+  height: 75px;
+  width: 150px;
+  background-color: #ef6c00;
+}
+
+.left.margin_10 {
+  /*  Помним о потоке документа,
+   блоки по умолчанию стоят слева направо, 
+   значит блок всегда изначально прижат к 
+   левому краю блока-родителя  */
+}
+
+.center.margin_10 {
+  margin: auto;
+}
+
+.right.margin_10 {
+  margin-left: auto;
+}
+
+/* 10.1 Вертикальное */
+/* 10.1.1 vertical-align */
+.outer-box.vert_10 {
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: #3f51b5;
+}
+
+.outer-box.vert_10 div{
+  display: inline-block;
+  background-color: #ff4081;
+}
+
+.outer-box.top.vert_10 > div {
+  vertical-align: top;
+}
+
+.outer-box.middle.vert_10 > div {
+  vertical-align: middle;
+}
+
+.outer-box.bottom.vert_10 > div {
+  vertical-align: bottom;
+}
+
+/*  */
+.text.vert_10 {
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  color: #212121;
+}
+
+.text.vert_10 .super {
+  vertical-align: super;
+}
+
+.text.vert_10 .sub.vert_10 {
+  vertical-align: sub;
+}
+
+/*  */
+.outer-box.vert_10 div:nth-child(1) {
+  height: 50px;
+  width: 75px;
+}
+.outer-box.vert_10 div:nth-child(2) {
+  height: 100px;
+  width: 75px;
+}
+
+.outer-box.vert_10 div:nth-child(3) {
+  height: 150px;
+  width: 75px;
+}
+
+/* 11 Оформление текста */
+/*Задание CSS-правил для тегов*/
+article.text_11 {
+  background: #ffffff;
+  color: #212121;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+a.text_11 {
+  font-size: 8px;
+}
+
+p.text_11 {
+  text-indent: 25px;
+}
+
+section.text_11 i {
+  text-decoration: underline;
+}
+
+section.text_11 ul {
+  list-style-type: square;
+  padding-left: 25px;
+}
+
+/* Задание CSS-правил для классов */
+p.text_11:first-letter {
+  font-size: 36px;
+  color: #e91e63;
+}
+
+.special.text_11 {
+  font-style: italic;
+}
+
+.sup.text_11 {
+  vertical-align: super;
+}
+
+
+/* 12.2 Свойство background */
+/* body {
+  /* Если в CSS используются 2 свойства для задания
+  направления или размера, 
+  то 1-е свойство - это описание горизонтали (ось X)
+  а 2-е свойсво - это описание вертикали (ось Y) */
+
+  /* краткая запись */
+  /* background: #ccf url("https://images.pexels.com/photos/724712/pexels-photo-724712.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") no-repeat center center fixed; */
+  /* background-size: cover; */
+
+  /* полная запись */
+  /* background-color: #ccf;*/
+  /* background-image: url(bg5.jpg); */
+  /* background-repeat: no-repeat; */
+  /* background-position: center center;*/
+  /* background-attachment: fixed;*/
+
+  /* варианты, показывающие на что влияет это свойсто */
+  /*background-position: 50% 50%;*/
+  /*background-position: top;*/
+
+  /* варианты, показывающие на что влияет это свойсто */
+  /*background-size: 100% auto;*/
+  /*background-size: auto 100%;*/
+  /*background-size: contain;*/
+  /*background-size: cover;*/
+/* } */
+
+/* 12.2.1 background-repeat */
+.wrapper {
+  background: #6d6562 url(https://image.ibb.co/nR0DXQ/chess_field2.jpg);
+  max-width: 480px;
+  height: 120px;
+  margin: auto;
+
+}
+
+.no.wrapper {
+  background-repeat: no-repeat;
+}
+
+.x.wrapper {
+  background-repeat: repeat-x;
+}
+
+.y.wrapper {
+  background-repeat: repeat-y;
+}
+
+.r.wrapper {
+  background-repeat: repeat;
+}
+
+h1.bg_rep_12 {
+  color: fff;
+  text-align: center;
+}
+
+figure.bg_rep_12 {
+  text-align: center;
+  border-bottom: 2px solid #212121;
+  padding-bottom: 10px;
+}
+
