@@ -373,7 +373,7 @@ main {
   line-height: 40px;
 }
 
-.product-card section:hover .name-and-price {
+.product-card:hover .name-and-price {
   background-color: #1abc9c;
 }
 
