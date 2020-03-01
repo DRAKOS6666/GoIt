@@ -206,7 +206,7 @@ main {
   padding-bottom: 92px;
 }
 
-.collection > h2::after {
+.product-card > h2::after {
   margin: 0 auto;
   display: block;
   margin-top: 32px;
@@ -239,7 +239,7 @@ main {
 
 /* COLLECTION IMAGE */
 
-.collection img {
+.product-card img {
   display: block;
 }
 
@@ -373,11 +373,11 @@ main {
   line-height: 40px;
 }
 
-.collection section:hover .name-and-price {
+.product-card section:hover .name-and-price {
   background-color: #1abc9c;
 }
 
-.collection-title {
+.product-card-title {
   padding-bottom: 82px;
 }
 
