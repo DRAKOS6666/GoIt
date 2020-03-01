@@ -17,12 +17,10 @@
 }
 
 main {
-  width: 1600px;
+  width: auto;
   margin: auto;
   background-color: #e9f0fd;
 }
-
-
 
 .hidden_title {
   display: none;
@@ -97,26 +95,17 @@ main {
   color: #1abc9c;
 }
 
-/* BANNER */
+/* Slider */
 
-.banner {
+.slider {
   margin: auto;
-  width: 1600px;
+  width: auto;
   position: relative;
   margin-bottom: 100px;
 }
 
-.banner-img {
-  display: block;
-  position: relative;
-  max-width: 100%;
-  height: 100%;
-  margin: auto;
-  text-align: center;
-  z-index: 0;
-}
-
-.overlay {
+.slider::before {
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -128,8 +117,18 @@ main {
   z-index: 2;
 }
 
-.banner-title {
+.slider-img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  z-index: 0;
+}
+
+.slider-title {
   display: inline-block;
+  margin: 0 80px 0 80px;
   font-family: Roboto, serif;
   font-size: 60px;
   font-weight: 900;
@@ -139,7 +138,7 @@ main {
   text-transform: uppercase;
 }
 
-.banner-description {
+.slider-description {
   display: block;
   text-align: left;
   font-family: Roboto, serif;
@@ -151,9 +150,8 @@ main {
   text-transform: uppercase;
 }
 
-.banner-figcaption {
+.slider-figcaption {
   height: auto;
-  margin: auto;
   width: 100%;
   text-align: center;
   vertical-align: middle;
@@ -164,30 +162,29 @@ main {
   z-index: 10;
 }
 
-.banner-figcaption::before,
-.banner-figcaption::after {
-  font-family: "Pe-icon-7-stroke";
-  font-size: 104px;
+.slider-button {
+  outline: none;
   display: inline-block;
+  font-family: "Pe-icon-7-stroke";
+  font-size: 100px;
+  text-align: center;
   color: #fff;
   background-color: #4ec6ab;
   opacity: 0.651;
   width: 104px;
-  height: 104px;
+  height: 104px;  
+  border: 1px solid #fff;
 }
 
-.banner-figcaption::before {
-  margin-right: 80px;
+.slider-button.left::before {
   content: "\e686";
 }
 
-.banner-figcaption::after {
-  margin-left: 80px;
+.slider-button.right::before {
   content: "\e684";
 }
 
-.banner-figcaption:hover::before,
-.banner-figcaption:hover::after {
+.slider-button:hover {
   opacity: 1;
   cursor: pointer;
 }
@@ -224,7 +221,7 @@ main {
   margin-right: 30px;
 }
 
-.product-card  a {
+.product-card a {
   text-decoration: none;
   color: #fff;
 }
@@ -243,12 +240,12 @@ main {
   display: block;
 }
 
-
 .product-photo {
   position: relative;
 }
 
-.product-card:hover .overlay-photo {
+.product-card:hover .product-photo::before {
+  content: "";
   position: absolute;
   width: auto;
   height: auto;
@@ -279,6 +276,10 @@ main {
 }
 
 .card-icon {
+  outline: none;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
   height: 50px;
   width: 50px;
   float: left;
@@ -286,8 +287,9 @@ main {
   margin-bottom: 7px;
 }
 
-.icon-shuffle, .icon-clock {
-  margin-left: 8px;
+.card-icon:hover {
+  background-color: #1abc9c;
+  border: 0;
 }
 
 .card-icon::before {
@@ -302,25 +304,26 @@ main {
   color: #fff;
 }
 
+.icon-shuffle,
+.icon-clock {
+  margin-left: 8px;
+}
+
+
 .icon-like::before {
-  content: '\e642';
+  content: "\e642";
 }
 
 .icon-shuffle::before {
-  content: '\e614';
+  content: "\e614";
 }
 
 .icon-clock::before {
-  content: '\e66b';
+  content: "\e66b";
 }
 
 .icon-cart::before {
-  content: '\e66e';
-  border: 0;
-}
-
-.icon-cart:hover, .icon-clock:hover, .icon-shuffle:hover, .icon-like:hover {
-  background-color: #1abc9c;
+  content: "\e66e";
   border: 0;
 }
 
@@ -381,15 +384,14 @@ main {
   padding-bottom: 82px;
 }
 
-
 /* Footer */
 
 footer {
   margin: auto;
   text-align: center;
-  width: 1600px;
+  width: auto;
   height: 88px;
-  background-color: #323232;  
+  background-color: #323232;
 }
 
 .footer-text {
