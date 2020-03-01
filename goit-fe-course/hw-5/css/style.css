@@ -248,7 +248,7 @@ main {
   position: relative;
 }
 
-.product-photo:hover .overlay-photo {
+.product-card:hover .overlay-photo {
   position: absolute;
   width: auto;
   height: auto;
@@ -265,7 +265,7 @@ main {
   display: none;
 }
 
-.product-photo:hover .card-icons-block {
+.product-card:hover .card-icons-block {
   position: absolute;
   display: inline-block;
   top: 50%;
