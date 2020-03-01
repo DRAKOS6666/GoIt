@@ -22,7 +22,7 @@ h2 {
 }
 
 .homeworks {
-  counter-reset: count-homeworks;
+  counter-reset: count-homeworks 1;
 }
 
 section {
