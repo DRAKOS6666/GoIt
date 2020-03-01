@@ -206,7 +206,7 @@ main {
   padding-bottom: 92px;
 }
 
-.product-card > h2::after {
+.collection-title::after {
   margin: 0 auto;
   display: block;
   margin-top: 32px;
