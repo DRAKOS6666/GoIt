@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: darkblue;
+}
+
+.nav-ul {
+  margin-top: 50px;
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-ul li {
+  margin-left: 20px;
+  background-color: #cc2222;
+}
+
+.nav-ul li:hover {
+  transition: transform 500ms ease-out, background-color 500ms ease,
+    border-radius 200ms linear;
+  transform: scale(1.2);
+  background-color: lightseagreen;
+  border-radius: 30%;
+}
+
+.nav-ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  width: 200px;
+  height: 30px;
+}
+
+body,
+header {
+  margin-left: 2%;
+}
+
+article > p, article > ol {
+  font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h2 {
+  color: rgb(255, 155, 41);
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: green;
+  text-transform: uppercase;
+  padding-top: 25px;
+}
+
+/* TASK1 */
+
+.task1 {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery-photo {
+  margin-bottom: 25px;
+  padding: 5px;
+  border: 2px solid lightcoral;
+}
+
+.gallery-photo:hover {
+  transition: transform 400ms;
+  transform: scale(1.2);
+  border: 0;
+}
+
+/* TASK2 */
+
+.task2 {
+  text-align: center;
+  width: 300px;
+  padding: 10px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px #212121;
+  position: relative;
+}
+
+.task2:hover {
+  box-shadow: 0 0 30px;
+}
+
+.t2-box-img {
+  height: 450px;
+}
+
+.t2-img {
+  width: 100%;
+}
+
+.t2-img:hover {
+  transition: transform 200ms linear;
+  transform: rotate(5deg);
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.t2-title {
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.t2-title:hover {
+  transition: transform 200ms ease-in, color 300ms ease-in-out;
+  transform: scale(1.15);
+  color: red;
+  cursor: pointer;
+}
+
+.t2-text {
+  font-weight: bold;
+  color: blue;
+  padding-bottom: 10px;
+}
+
+.t2-button {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(73, 67, 67);
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.t2-button:hover {
+  transition: width 200ms linear, background-color 200ms linear;
+  background-color: limegreen;
+  width: 100%;
+}
+
+/* TASK3 */
+
+.task3 {
+  width: 1000px;
+  text-align: center;
+  margin: auto;
+}
+
+/* TASK4 */
+
+.task4 {
+  width: 470px;
+  text-align: center;
+  margin: auto;
+}
