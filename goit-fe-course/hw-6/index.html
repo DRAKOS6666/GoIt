@@ -25,10 +25,10 @@
     <!-- Header -->
     <header class="content-width">
       <!-- Navigation menu -->
-      <nav class="navigation">
+      <nav class="navigation flex-container">
         <h2 class="hidden_title">navigation</h2>
         <a href="#" class="logo">MoGo</a>
-        <ul class="menu">
+        <ul class="flex-container">
           <li class="menu_item"><a href="#">about</a></li>
           <li class="menu_item"><a href="#">work</a></li>
           <li class="menu_item"><a href="#">service</a></li>
@@ -46,11 +46,11 @@
           We work with <span>amaizing services</span>
         </h2>
 
-        <!-- ITEM-BLOCKS -->
-        <div class="service-blocks">
+        <!-- Service-Item-Blocks -->
+        <div class="service-blocks flex-container">
           <!-- 1st service-item -->
           <section>
-            <div class="service-item">
+            <div class="service-item alarm-icon">
               <div class="service-item-text-block">
                 <h3 class="service-item-title">photography</h3>
                 <p>
@@ -61,9 +61,20 @@
             </div>
           </section>
           <section>
-            <div class="service-item">
+            <div class="service-item graph-icon">
               <div class="service-item-text-block">
-                <h3 class="service-item-title">photography</h3>
+                <h3 class="service-item-title">Web Design</h3>
+                <p>
+                  Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="service-item computer_ok-icon">
+              <div class="service-item-text-block">
+                <h3 class="service-item-title">Creativity</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
                   impedit suscipit culpa.
@@ -72,9 +83,31 @@
             </div>
           </section>
           <section>
-            <div class="service-item">
+            <div class="service-item book_2-icon">
               <div class="service-item-text-block">
-                <h3 class="service-item-title">photography</h3>
+                <h3 class="service-item-title">SEO</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  impedit suscipit culpa.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="service-item home-icon">
+              <div class="service-item-text-block">
+                <h3 class="service-item-title">Css/Html</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  impedit suscipit culpa.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="service-item focus-icon">
+              <div class="service-item-text-block">
+                <h3 class="service-item-title">digital</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
                   impedit suscipit culpa.
@@ -84,6 +117,10 @@
           </section>
         </div>
       </article>
+
+      <!-- OUR-TEAM-COLLECTION -->
+      
+      <!-- Our-team-title and description -->
       <article>
         <h2 class="collection-title team">
           Who we are <span>meet our team</span>
@@ -96,27 +133,94 @@
         </p>
 
         <!-- TEAM-ITEM-BLOCKS -->
-        <div class="team-blocks">
-          <!-- 1st team-item -->
+        <div class="team-blocks flex-container">
+          <!-- 1st team-item-block -->
           <section>
-            <div class="team-item">
-              <div class="team-item-text-block">
-                <h3 class="team-item-title">photography</h3>
-                <p class="team-item-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Sapiente dignissimos doloremque eaque
-                </p>
+            <h3 class="hidden_title">Our Team member</h3>
+            <figure>
+              <div class="team-item">
+                <div
+                  class="overlay-crewman-photo card-icons-block flex-container"
+                >
+                  <button class="card-icon icon-facebook"></button>
+                  <button class="card-icon icon-twitter"></button>
+                  <button class="card-icon icon-pinterest"></button>
+                  <button class="card-icon icon-instagram"></button>
+                </div>
+                <img
+                  class="crewman-photo"
+                  src="./img/designer.png"
+                  alt="designer"
+                  width="380"
+                  height="470"
+                />
               </div>
-            </div>
+              <figcaption class="crewman-figcaption">
+                <h4 class="crewman-name">matthew dix</h4>
+                <p class="crewman-post">Grapgic Design</p>
+              </figcaption>
+            </figure>
+          </section>
+          <section>
+            <h3 class="hidden_title">Our Team member</h3>
+            <figure>
+              <div class="team-item">
+                <div
+                  class="overlay-crewman-photo card-icons-block flex-container"
+                >
+                  <button class="card-icon icon-facebook"></button>
+                  <button class="card-icon icon-twitter"></button>
+                  <button class="card-icon icon-pinterest"></button>
+                  <button class="card-icon icon-instagram"></button>
+                </div>
+                <img
+                  class="crewman-photo"
+                  src="./img/photographer.png"
+                  alt="photographer"
+                  width="380"
+                  height="470"
+                />
+              </div>
+              <figcaption class="crewman-figcaption">
+                <h4 class="crewman-name">Christopher Campbell</h4>
+                <p class="crewman-post">Branding/UX design</p>
+              </figcaption>
+            </figure>
+          </section>
+          <section>
+            <h3 class="hidden_title">Our Team member</h3>
+            <figure>
+              <div class="team-item">
+                <div
+                  class="overlay-crewman-photo card-icons-block flex-container"
+                >
+                  <button class="card-icon icon-facebook"></button>
+                  <button class="card-icon icon-twitter"></button>
+                  <button class="card-icon icon-pinterest"></button>
+                  <button class="card-icon icon-instagram"></button>
+                </div>
+                <img
+                  class="crewman-photo"
+                  src="./img/developer.png"
+                  alt="developer"
+                  width="380"
+                  height="470"
+                />
+              </div>
+              <figcaption class="crewman-figcaption">
+                <h4 class="crewman-name">Michael Fertig</h4>
+                <p class="crewman-post">Developer</p>
+              </figcaption>
+            </figure>
           </section>
         </div>
       </article>
     </main>
 
-    <!-- footer -->
-    <footer class="content-width">
+    <!-- FOOTER -->
+    <footer class="content-width flex-container">
       <p class="footer-text">
-        © 2016 MoGo free PSD template by <a href="#">Laaqiq</a>
+        © 2016 MoGo free PSD template by<a href="#"> Laaqiq</a>
       </p>
       <form class="footer-form" action="#">
         <input
@@ -125,7 +229,7 @@
           id="user-email"
           placeholder="Your Email..."
         />
-        <input class="footer-form-button" type="button" value="subscribe">
+        <input class="footer-form-button" type="button" value="subscribe" />
       </form>
     </footer>
   </body>
