@@ -136,7 +136,7 @@ main {
   content: url(../img/computer_ok.png);
 }
 .book_2-icon::before {
-  content: url(../img/book_2.png);
+  content: url(../img/book.png);
 }
 .home-icon::before {
   content: url(../img/home.png);
