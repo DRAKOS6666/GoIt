@@ -32,11 +32,6 @@ main {
   justify-content: space-between;
 }
 
-.navigation {
-  padding-top: 35px;
-  padding-bottom: 30px;
-}
-
 /* LOGO */
 
 .logo {
@@ -49,10 +44,19 @@ main {
 }
 
 /* MENU */
+.navigation {
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+
+.nav-list {
+  align-items: center;
+}
 
 .menu_item {
   list-style-type: none;
   margin-right: 55px;
+  position: relative;
 }
 
 .navigation li:last-child {
@@ -60,6 +64,8 @@ main {
 }
 
 .menu_item a {
+  width: 100%;
+  height: 100%;
   font-family: Montserrat, serif;
   font-weight: 500;
   font-size: 14px;
@@ -67,20 +73,20 @@ main {
   color: #95e1d3;
   text-decoration: none;
   text-transform: uppercase;
-  transition: ;
 }
 
-.menu_item > a:hover {
+.menu_item:hover > a {
   transition: color 200ms linear;
   color: #f38181;
 }
 
 .menu_item:hover > a::after {
-  transition: background-color 2000ms linear;
+  transition: background-color 200ms linear;
   content: "";
   margin-top: 10px;
   display: block;
-  width: auto;
+  position: absolute;
+  width: 100%;
   height: 3px;
   background-color: #f38181;
 }
@@ -119,10 +125,12 @@ main {
 }
 
 /* Service-Item-Blocks */
+.service-blocks > section {
+  max-width: 380px;
+}
 
 .service-item {
   display: flex;
-  max-width: 380px;
   margin-bottom: 100px;
 }
 
@@ -162,6 +170,7 @@ main {
   padding-bottom: 20px;
   font-family: Montserrat, serif;
   font-weight: 400;
+  font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
   color: #333333;
@@ -185,6 +194,11 @@ main {
 }
 
 /* TEAM-ITEM-BLOCKS */
+
+.team-blocks section {
+  width: 380px;
+}
+
 .team-blocks figure {
   padding-bottom: 84px;
 }
@@ -200,16 +214,22 @@ main {
   transition: transform 200ms linear;
   transform: translate(-10px, -10px);
 }
-.team-item:hover .overlay-crewman-photo::after {
-  transition: all 200ms linear;
-  position: absolute;
-  transform: translate(-10px, -10px);
+.overlay-crewman-photo::after {
   content: "";
-  height: 100%;
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-image: linear-gradient(#f38181,#fce38a);
   opacity: 0.9;
+  height: 470px;
+  width: 380px;
   z-index: -1;
+}
+
+.team-item:hover .overlay-crewman-photo::after {
+  z-index: 0;
+  transition: transform 200ms linear;
+  transform: translate(-10px, -10px);
 }
 
 .card-icons-block {
@@ -227,11 +247,13 @@ main {
 }
 
 .card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #f38181;
   background-color: #fce38a;
   width: 56px;
   height: 56px;
-  border: none;
 }
 
 .icon-facebook::before {
@@ -305,14 +327,14 @@ footer {
   align-items: center;
 }
 
-#user-email {
+.input-email {
   height: 40px;
-  max-width: 230px;
+  width: 230px;
   padding-left: 10px;
   border: 1px solid #e7e7e7;
 }
 
-#user-email::placeholder {
+.input-email::placeholder {
   font-family: "Roboto", serif;
   font-style: italic;
   font-weight: 300;
