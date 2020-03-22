@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Theory module7</title>
+  </head>
+
+  <!-- 3. Таблицы  -->
+  <body>
+    <div class="container">
+      <table class="table-progress">
+        <caption>
+          Таблица успеваемости
+        </caption>
+        <thead>
+          <tr>
+            <th>№</th>
+            <th colspan="4">Фамилия</th>
+            <th colspan="3">Средний бал</th>
+            <th>Предмет</th>
+          </tr>
+        </thead>
+        <tr>
+          <th>1.</th>
+          <td colspan="4">Иваненко</td>
+          <td colspan="3">4.8</td>
+          <th rowspan="5">Физика</th>
+        </tr>
+        <tr>
+          <th>2.</th>
+          <td colspan="4">Иванов</td>
+          <td colspan="3">4.6</td>
+        </tr>
+        <tr>
+          <th>3.</th>
+          <td colspan="4">Петренко</td>
+          <td colspan="3">4.2</td>
+        </tr>
+        <tr>
+          <th>4.</th>
+          <td colspan="4">Петров</td>
+          <td colspan="3">4.4</td>
+        </tr>
+        <tr>
+          <th colspan="5">Общий средний бал</th>
+          <td colspan="3">45</td>
+        </tr>
+      </table>
+
+      <tfoot></tfoot>
+      <table class="tg">
+        <caption>
+          Таблица с онлайн генератора таблиц
+        </caption>
+        <tr>
+          <th class="tg-0lax"></th>
+          <th class="tg-j0qd">fesfsefsFA</th>
+          <th class="tg-0lax"></th>
+          <th class="tg-0lax"></th>
+          <th class="tg-0lax"></th>
+          <th class="tg-0lax"></th>
+          <th class="tg-vmxo">fesf</th>
+          <th class="tg-0lax"></th>
+        </tr>
+        <tr>
+          <td class="tg-0lax"></td>
+          <td class="tg-kd4e"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-eftv" colspan="2">
+            fser<img
+              src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3e%3cpath fill='%23000000' d='M12.971 352h32.394C67.172 454.735 181.944 512 288 512c106.229 0 220.853-57.38 242.635-160h32.394c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0l-67.029 67.029c-7.56 7.56-2.206 20.485 8.485 20.485h35.146c-20.29 54.317-84.963 86.588-144.117 94.015V256h52c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-52v-5.47c37.281-13.178 63.995-48.725 64-90.518C384.005 43.772 341.605.738 289.37.01 235.723-.739 192 42.525 192 96c0 41.798 26.716 77.35 64 90.53V192h-52c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h52v190.015c-58.936-7.399-123.82-39.679-144.117-94.015h35.146c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0L4.485 331.515C-3.074 339.074 2.28 352 12.971 352zM288 64c17.645 0 32 14.355 32 32s-14.355 32-32 32-32-14.355-32-32 14.355-32 32-32z'/%3e%3c/svg%3e"
+              alt="Image"
+              width="100"
+              height="100"
+            />
+          </td>
+          <td class="tg-0lax"></td>
+          <td class="tg-6bac" rowspan="2">ssefa</td>
+          <td class="tg-0lax"></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax"></td>
+          <td class="tg-1o2v">
+            <span style="font-style:italic">grdgdrt </span>
+          </td>
+          <td class="tg-0lax"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-0lax"></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax"></td>
+          <td class="tg-0lax" colspan="2"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-0lax"></td>
+          <td class="tg-0lax"></td>
+        </tr>
+      </table>
+
+      <!-- 4. Формы -->
+      <div class="form-wrapper">
+        <form class="form-theory" action="#" method="get">
+          <label class="form-theory" for="id_input">Your Name</label>
+          <input
+            class="input-theory"
+            placeholder="Input your name"
+            type="text"
+            name="a"
+            id="id_input"
+          />
+          <input class="input-theory" type="submit" value="send to server" />
+        </form>
+      </div>
+
+      <!-- Квест ФОРМЫ -->
+      <div class="form-quest">
+        <label class="input-title" for="start-quest-lable"
+          >Нажми кнопку чтоб начать квест</label
+        >
+        <input type="button" value="Начинаю" />
+        <label class="input-title" for="input-checkbox"
+          >Какой должна быть игра:</label
+        >
+        <label for="what-game-cb"
+          ><input
+            type="checkbox"
+            name="what-game"
+            value="funny"
+          />Веселая</label
+        >
+        <label for="what-game-cb"
+          ><input
+            type="checkbox"
+            name="what-game"
+            id="what-game-cool"
+          />Прикольная</label
+        >
+        <label for="what-game-cb"
+          ><input
+            type="checkbox"
+            name="what-game"
+            id="what-game-dull"
+          />Тупая</label
+        >
+        <label class="input-title" for="input-file"
+          >Выбери свое ржачное фото</label
+        >
+
+        <input class="input-file" type="file" name="input-file" />
+        <label class="input-title" for="input-image"
+          >Найду тебя на фото, если напишешь свой пароль на всех сайтах</label
+        >
+        <input type="password" placeholder="пароль сюда" name="input-pass" />
+        <label class="input-title" for="input-image"
+          >Можешь теперь ударить себя в морду</label
+        >
+        <input
+          class="input-image"
+          type="image"
+          src="data:image/jpeg;base64,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"
+          alt="рожа"
+        />
+        <label class="input-title" for="input-radio"
+          >Ты подтверждаеш неверность правильности подобраного твоего
+          фото?</label
+        >
+        <label for="input-image"
+          ><input type="radio" name="input-radio" />Да не подтверждаю</label
+        >
+        <label for="input-image"
+          ><input type="radio" name="input-radio" />Нет не подтверждаю</label
+        >
+        <label for="input-image"
+          ><input type="radio" name="input-radio" />Да нет не подтверждаю</label
+        >
+        <label class="input-title" for="input-text"
+          >Напиши направление - куда послать автора квеста:</label
+        >
+        <div class="author-send">
+          <input type="text" placeholder="куда шлем?" name="input-text" />
+          <input type="submit" value="Послать на ..." />
+        </div>
+        <label class="input-title" for="input-color"
+          >Выбери желаемый цвет</label
+        >
+        <input type="color" name="input-color" />
+        <label class="input-title" for="input-datetime"
+          >Выбери дату и время</label
+        >
+        <input type="datetime-local" />
+        <label class="input-title" for="input-number"
+          >Задай размер от 10 до 20</label
+        >
+        <input type="number" min="10" max="20" name="input-number" />
+        <h4>
+          Поздравляю! Теперь к заданой дате твой нос вырастет на заданый размер
+          и изменит цвет на выбраный тобой
+        </h4>
+        <img width="200" src="https://i.pinimg.com/originals/96/7a/5f/967a5f4c5270555436f0892858e1d241.jpg" alt="">
+        <label class="input-title" for="input-email"
+          >Теперь введи свою почту</label
+        >
+        <input type="email" name="input-email">
+        <label class="input-title" for="input-tel"
+          >Введи свой номер телефона</label
+        >
+        <input type="email" name="input-tel">
+        <label class="input-title" for="input-time"
+          >Сколько время?</label
+        >
+        <input type="time" name="input-time">
+        <label class="input-title" for="input-range"
+          >Потягай себя за нос</label
+        >
+        <input type="range" name="input-range">
+      </div>
+    </div>
+  </body>
+</html>

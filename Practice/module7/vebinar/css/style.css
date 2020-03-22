@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+h3 {
+  color: green;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* <!-- Правило переноса большого слова (тег wbr) --> */
+
+.wbr-tag {
+  margin: auto;
+  width: 100px;
+}
+
+.wbr-tag .word {
+  padding-top: 20px;
+  font-weight: 800;
+}
+
+
+
+/* <!-- Тег Адресс (для роботов) --> */
+
+address {
+  text-align: left;
+  width: 350px;
+  margin: auto;
+  background-color: #b4b4b4;
+}
+
+/* <!-- Удобное выведение кода программирования (тег code) --> */
+.code-text {
+  text-align: left;
+  background-color: rgb(194, 194, 194);
+}
+
+/* <!-- Выделение текста маркером (тег mark) --> */
+.mark {
+  margin: auto;
+  width: 200px;
+  background-color: #b4b4b4;
+}
+  
+/* <!-- Групировка элементов цитаты с подписью --> */
+figure {
+  width: 300px;
+  margin: auto;
+}
+
+figure p {
+  text-align: left;
+  font-weight: 700;
+  padding-left: 25px;
+  padding-bottom: 10px;
+}
+
+/* <!-- Видео проигрыватель --> */
+
+video {
+  max-width: 100%;
+}
+
+.video {
+  position: relative;
+}
+
+.icon-play:hover {
+  filter: opacity(1);
+  cursor: pointer;
+}
+
+.icon-play {
+  display: block;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: opacity(0.5);
+}
