@@ -10,10 +10,7 @@
       href="./favicons/drakos_goit_logo100.png"
       sizes="16x16"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Meie+Script|Montserrat:400,700|Playfair+Display:500i|Roboto+Slab&display=swap"
-      rel="stylesheet"
-    />
+    
     <link rel="stylesheet" href="./css/style.css" />
     <meta name="author" content="Drobinko Kostiantyn" />
     <meta name="description" content="HomeWork_module_7" />
@@ -91,14 +88,50 @@
 
     <!-- FOOTER -->
     <!-- CONTACT US -->
-    <footer class="content-width flex-container">
-      <h2 class="collection-title contact-form">
+    <footer class="footer flex-container">
+      <h2 class="collection-title contact-form-title">
         contact us
       </h2>
       <p class="collection-description">
         Proin iaculis purus consequat sem cure.
       </p>
-      <form class="footer-form" action="#"></form>
+      <form class="footer-form content-width flex-container" action="#">
+        <div class="footer-inputs flex-container">
+          <div class="input-text-blocks flex-container">
+            <input class="placeholder"
+            minlength="4"
+              type="text"
+              name="user-name"
+              required
+              id="user-name"
+              placeholder="your name *"
+            />
+            <input class="placeholder"
+            minlength="4"
+              type="email"
+              name="user-email"
+              required
+              id="user-email"
+              placeholder="your e-mail *"
+            />
+            <input class="placeholder"
+              type="text"
+              name="user-subject"
+              id="user-subject"
+              placeholder="subject"
+            />
+          </div>
+          <div class="text-area-container"><textarea
+            minlength="5"
+            class="placeholder"
+            name="user-message"
+            required
+            id="user-message"
+            placeholder="your message *"
+          ></textarea></div>
+        </div>
+        <button class="footer-form-button" type="submit">send message</button>
+      </form>
     </footer>
   </body>
 </html>
