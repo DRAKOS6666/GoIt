@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: darkblue;
+}
+
+.nav-ul {
+  margin-top: 50px;
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-ul li {
+  margin-left: 20px;
+  background-color: #cc2222;
+}
+
+.nav-ul li:hover {
+  transition: transform 500ms ease-out, background-color 500ms ease,
+    border-radius 200ms linear;
+  transform: scale(1.2);
+  background-color: lightseagreen;
+  border-radius: 30%;
+}
+
+.nav-ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  width: 200px;
+  height: 30px;
+}
+
+body,
+header {
+  margin-left: 2%;
+}
+
+article > p,
+article > ol {
+  font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h2 {
+  color: rgb(255, 155, 41);
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: green;
+  text-transform: uppercase;
+  padding-top: 25px;
+}
+
+/* TASK1 */
+
+.task1-wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 900px;
+}
+
+.table-caption {
+  padding: 15px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: #444444;
+}
+
+.task1-table {
+  margin-left: 20px;
+  border-collapse: collapse;
+  border: 2px solid #444444;
+}
+
+.task1-table th {
+  padding: 15px;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: rgb(48, 48, 48);
+}
+
+.task1-table td {
+  border: 2px solid #444444;
+  color: #303030;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.task1-table td[colspan="3"] {
+  text-transform: uppercase;
+  text-align: left;
+}
+
+
+/* TASK2 */
+
+.task2-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.t2-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  
+  width: 410px;
+}
+
+.form-element {
+  border: 1px solid #767676 ;
+  margin-bottom: 30px;
+  padding: 18px;
+}
+
+.form-element::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #272727;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.t2-button {
+  font-weight: 600;
+  font-size: 15px;
+  align-self: center;
+  border: none;
+  width: 160px;
+  height: 55px;
+  background-color: #e76262;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* TASK3 */
+
+.task3 {
+  width: 1000px;
+  text-align: center;
+  margin: auto;
+}
+
+/* TASK4 */
+
+.task4 {
+  width: 470px;
+  text-align: center;
+  margin: auto;
+}

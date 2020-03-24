@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Theory module8</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Picture TAG  -->
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            .\img\opera-fullshot-200.webp   200w,
+            .\img\opera-fullshot-400.webp   400w,
+            .\img\opera-fullshot-800.webp   800w,
+            .\img\opera-fullshot-1200.webp 1200w,
+            .\img\opera-fullshot-1600.webp 1600w,
+            .\img\opera-fullshot-2000.webp 2000w
+          "
+          sizes="50vw"
+          type="image/webp"
+        />
+        <source
+          sizes="(min-width: 640px) 60vw, 100vw"
+          srcset="
+            .\img\opera-fullshot-200.webp   200w,
+            .\img\opera-fullshot-400.webp   400w,
+            .\img\opera-fullshot-800.webp   800w,
+            .\img\opera-fullshot-1200.webp 1200w,
+            .\img\opera-fullshot-1600.webp 1600w,
+            .\img\opera-fullshot-2000.webp 2000w
+          "
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            .\img\opera-fullshot-200.jpg   200w,
+            .\img\opera-fullshot-400.jpg   400w,
+            .\img\opera-fullshot-800.jpg   800w,
+            .\img\opera-fullshot-1200.jpg 1200w,
+            .\img\opera-fullshot-1600.jpg 1600w,
+            .\img\opera-fullshot-2000.jpg 2000w
+          "
+          sizes="50vw"
+        />
+        <img
+          src=".\img\opera-fullshot-400.jpg"
+          alt="The Oslo .\img\Opera House"
+          srcset="
+            .\img\opera-fullshot-200.jpg   200w,
+            .\img\opera-fullshot-400.jpg   400w,
+            .\img\opera-fullshot-800.jpg   800w,
+            .\img\opera-fullshot-1200.jpg 1200w,
+            .\img\opera-fullshot-1600.jpg 1600w,
+            .\img\opera-fullshot-2000.jpg 2000w
+          "
+        />
+      </picture>
+    </div>
+  </body>
+</html>
