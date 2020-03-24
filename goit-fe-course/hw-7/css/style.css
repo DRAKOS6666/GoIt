@@ -281,11 +281,11 @@ textarea {
 }
 
 textarea:valid:focus, input:valid:focus[required] {
-  border: 2px solid green;
+  outline: 2px solid green;
 }
 
 textarea:invalid:focus, input:invalid:focus[required] {
-  border: 2px solid red;
+  outline: 2px solid red;
 }
 
 .placeholder::placeholder{
