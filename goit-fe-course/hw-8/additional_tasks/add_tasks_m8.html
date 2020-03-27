@@ -7,10 +7,8 @@
   </head>
 
   <body>
-    <header>
+    <header id="top">
       <h1>Модуль 8 - Дополнительные Задания</h1>
-    </header>
-
     <nav>
       <ul class="nav-ul">
         <li><a href="#task1">Задание 1</a></li>
@@ -19,104 +17,125 @@
         <li><a href="#task4">Задание 4</a></li>
       </ul>
     </nav>
+    </header>
 
     <main>
+      <!-- TASK 1 -->
+
       <article>
         <h2 id="task1">Задание 1</h2>
 
-        <p>
-          Сверстать таблицу с изображения, использовать caption для заголовка.
+        <p class="task-descrition">
+          Сделать резиновую верстку по указанному изображению.
         </p>
+        <ul class="task-description-list">
+          <li>Ширина контейнера - 960px</li>
+          <li>Все остальные ширины должны быть в процентах</li>
+        </ul>
         <div class="task1-photo">
-          <img src="./img/module-07-task-1.png" alt="module-07-task-1" />
+          <img src="./img/task-1.jpg" alt="module-08-task-1" />
         </div>
 
         <h3>Result</h3>
         <div class="task1-wrapper">
-          <table class="task1-table">
-            <caption class="table-caption">
-              Услуги барбершопа "Branch"
-            </caption>
-            <tr>
-              <th colspan="3">Услуга</th>
-              <th colspan="2">Стоимость</th>
-              <th>Сроки</th>
-            </tr>
-            <tr>
-              <td colspan="3">мужская стрижка</td>
-              <td colspan="2">250 грн</td>
-              <td>1 час</td>
-            </tr>
-            <tr>
-              <td colspan="3">женская стрижка</td>
-              <td colspan="2">350 грн</td>
-              <td>2 часа</td>
-            </tr>
-            <tr>
-              <td colspan="3">стрижка + борода</td>
-              <td colspan="2">350 грн</td>
-              <td>1 час</td>
-            </tr>
-            <tr>
-              <td colspan="3">коррекция стрижки</td>
-              <td colspan="2">170 грн</td>
-              <td>1 час</td>
-            </tr>
-            <tr>
-              <td colspan="3">стрижка бороды</td>
-              <td colspan="2">150 грн</td>
-              <td>1 час</td>
-            </tr>
-            <tr>
-              <td colspan="3">черная маска</td>
-              <td colspan="2">150 грн</td>
-              <td>0.5 часа</td>
-            </tr>
-          </table>
+          <div class="t1-header"></div>
+          <div class="main-wrapper">
+            <div class="t1-main"></div>
+            <div class="t1-aside-left"></div>
+            <div class="t1-aside-right"></div>
+          </div>
+          <div class="t1-footer"></div>
         </div>
       </article>
+
+      <!-- TASK 2 -->
 
       <article>
         <h2 id="task2">Задание 2</h2>
 
-        <p>
-          Сверстать форму с изображения.
+        <p class="task-descrition">
+          Используя медиаправила повторить расположение блоков на рисунке.
         </p>
-
+        <ul class="task-description-list">
+          <li>480px+ левая фигура</li>
+          <li>768px+ правая фигура</li>
+        </ul>
         <div class="task2-photo">
-          <img src="./img/module-07-task-2.png" alt="module-07-task-2" />
+          <img src="./img/task-2.png" alt="module-08-task-2" />
         </div>
 
         <h3>Result</h3>
         <div class="task2-wrapper">
-          <form class="t2-form" action="#">
-            <input class="t2-name form-element" type="text" placeholder="Your Name" name="name">
-            <input class="t2-email form-element" type="email" placeholder="Your Email" name="email">
-            <textarea class="t2-textarea form-element" rows="10" placeholder="Your Message" name="message"></textarea>
-            <button class="t2-button" type="submit" name="submit">send</button>
-          </form>
+          <div class="t2-content">Content</div>
+          <div class="t2-sidebar">Sidebar</div>
         </div>
       </article>
+
+      <!-- TASK 3 -->
 
       <article>
         <h2 id="task3">Задание 3</h2>
 
-        <p></p>
+        <p class="task-descrition">
+          Используя медиаправила повторить расположение блоков на рисунке.
+        </p>
+        <ul class="task-description-list">
+          <li>480px+ левая фигура</li>
+          <li>768px+ правая фигура</li>
+        </ul>
+        <div class="task2-photo">
+          <img src="./img/task-3.jpg" alt="module-08-task-3" />
+        </div>
+
         <h3>Result</h3>
-        <div class="task3"></div>
+        <div class="task3">
+          <div class="t3-header"></div>
+          <div class="t3-content-wrapper">
+            <div class="t3-filters"></div>
+            <div class="t3-content"></div>
+          </div>
+        </div>
       </article>
 
+      <!-- TASK 4 -->
       <article>
         <h2 id="task4">Задание 4</h2>
 
-        <p></p>
+        <p class="task-descrition">
+          Записать picture со следующим поведением:
+        </p>
+        <ul class="task-description-list">
+          <li>480px+ любая картинка с попугаем</li>
+          <li>768px+ любая картинка с пальмой</li>
+          <li>1200px+ любая картинка с яхтой</li>
+          <li>по умолчанию любая картинка с пляжем</li>
+        </ul>
 
         <h3>Result</h3>
-        <div class="task4"></div>
+        <div class="task4">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="https://images.pexels.com/photos/843633/pexels-photo-843633.jpeg"              
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="https://images.pexels.com/photos/1979261/pexels-photo-1979261.jpeg"              
+            />
+            <source
+              media="(min-width: 480px)"
+              srcset="https://images.pexels.com/photos/2078772/pexels-photo-2078772.jpeg"
+            />            
+            <img src="https://images.pexels.com/photos/457878/pexels-photo-457878.jpeg" size="100vw" alt="Картинка пляжа">
+          </picture>
+        </div>
       </article>
     </main>
+
+    <!-- FOOTER -->
     <footer>
       <p>©Авторские права никому не принадлежат, 2050. Берите. Мне не жалко</p>
     </footer>
+    <a class="to-top-btn" href="#top"><div class="return">^</div></a>
   </body>
 </html>
