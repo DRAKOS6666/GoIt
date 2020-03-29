@@ -1,0 +1,329 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-300 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("../fonts/roboto-v20-latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden_title {
+  display: none;
+}
+
+header {
+  text-align: center;
+  height: 540px;  
+  margin-bottom: 66px;
+}
+
+.content-wrapper {
+  text-align: center;
+  height: 540px;
+  background: url(../img/party_friends_1440px.png), #1a1915;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* USER PROFILE */
+
+.login-btn,
+.sign-btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  height: 35px;
+  width: 90px;
+  border-radius: 35px;
+  border: 3px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.login-btn {
+  border-color: transparent;
+}
+.login-btn:hover {
+  border-color: #ffffff;
+}
+
+/* LOGO */
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logo-ref {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* BANER */
+
+.banner {
+  text-align: center;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.banner-title {
+  width: 100%;
+  padding-bottom: 8px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+.banner-subtitle {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.banner-btn {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  background-color: #ff4e50;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  height: 40px;
+  width: 100%;
+  max-width: 280px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* PARTNERS COLLECTION */
+
+.partners {
+  text-align: center;
+}
+
+figure {
+  margin-bottom: 25px;
+}
+
+.partners-section-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.partner-photo-wrapper {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.partner-photo {
+  border-radius: 50%;
+}
+.bradley_hunter::after {
+  background: url(../favicons/tv-icon.png), #ff4e50;
+}
+
+.lucas_marsha::after {
+  background: url(../favicons/chemestry-icon.png), #ffa507;
+}
+
+.heather_walker::after {
+  background: url(../favicons/coffee-icon.png), #1cd7ad;
+}
+
+.bradley_hunter2::after {
+  background: url(../favicons/plane-icon.png), #4e73db;
+}
+
+.partner-photo-wrapper::after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0px;
+  right: 0px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.partner-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.partner-description {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 17px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.service-item-text-block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.service-item-title {
+  padding-bottom: 11px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.025em;
+  color: #222222;
+}
+
+/* FOOTER */
+
+.footer {
+  text-align: center;
+  padding-bottom: 57px;
+}
+
+.footer-button {
+  width: 100%;
+  height: 40px;
+  border: 2px solid #ff4e50;
+  border-radius: 40px;
+  font: 700 14px/17px Montserrat, sans-serif;
+  color: #ff4e50;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 748px) {
+  .logo {
+    margin-top: 115px;
+  }
+
+  .navigation {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .banner-title {
+    max-width: 280px;
+  }
+  
+  .partner-description {
+    max-width: 238px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 749px) {
+  
+  .content-wrapper, header {
+    height: 700px;
+  }
+
+  .navigation {
+    padding-top: 37px;
+    padding-bottom: 141px;
+  }
+
+  .user-profile {
+    text-align: right;
+  }
+
+  .logo {
+    text-align: left;
+  }
+
+  .banner-title {
+    font-size: 52px;
+    line-height: 62px;
+    padding-bottom: 25px;
+  }
+
+  .banner-subtitle {
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 33px;
+    max-width: 465px;
+  }
+
+  .banner-btn {
+    max-width: 225px;
+  }
+
+  figure {    
+    margin-bottom: 54px;
+  }
+
+  .partners-section-title {
+    margin-bottom: 32px;
+  }
+
+ .partners-card4, .partners-card2 {
+    margin-bottom: 0;
+  }
+}
