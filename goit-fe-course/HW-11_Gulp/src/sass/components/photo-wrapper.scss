@@ -1,0 +1,18 @@
+.photo-wrapper {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(
+      $primary-accent-color,
+      $secondary-accent-color
+    );
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+}

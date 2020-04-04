@@ -1,0 +1,4 @@
+.site-logo {
+  font-family: $main-font-stack;
+  @include font-settings(30px, 36px, 700);
+}

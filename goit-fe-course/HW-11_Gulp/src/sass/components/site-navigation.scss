@@ -1,0 +1,49 @@
+.site-navigation {
+  padding-top: 25px;
+  padding-bottom: 157px;
+
+  &__list {
+    align-items: baseline;
+    height: 2em;
+    padding: 10px 0;
+  }
+
+  &__item {
+    margin-right: 52px;
+    position: relative;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    &:hover > .site-navigation__link::after {
+      @include pseudo($display: block);
+      background-color: $secondary-accent-color;
+      margin: 0 auto;
+      margin-top: 10px;
+      width: 80%;
+      height: 3px;
+    }
+
+    &:hover > .site-navigation__link {
+      transition: color 200ms linear;
+      color: $secondary-accent-color;
+    }
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    font-family: $main-font-stack;
+    @include font-settings(14px, 17px, 500, uppercase);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.navigation__icon {
+  fill: $primary-white-color;
+  width: 1.2em;
+  height: 1.2em;
+}

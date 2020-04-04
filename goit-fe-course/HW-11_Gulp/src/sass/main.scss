@@ -1,0 +1,28 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import 'normalize.scss';
+@import './helpers/variabless';
+@import './helpers/mixins.scss';
+
+@import 'base.scss';
+
+// Components
+@import './components/button';
+@import './components/logo';
+@import './components/link';
+@import './components/list';
+@import './components/container';
+@import './components/flex-container';
+
+@import './components/page-header';
+@import './components/site-navigation';
+@import './components/list-title';
+@import './components/banner';
+@import './components/service-items';
+@import './components/team-item';
+@import './components/photo-wrapper';
+@import './components/socials';
+@import './components/footer';
+@import './components/footer-form';

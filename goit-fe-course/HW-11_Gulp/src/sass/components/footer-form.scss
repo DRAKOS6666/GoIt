@@ -1,0 +1,25 @@
+.footer-form {
+  @include center-flex('ver');
+
+  &__email {
+    height: 40px;
+    width: 230px;
+    padding-left: 10px;
+    border: 1px solid #e7e7e7;
+
+    &::placeholder {
+      font-family: $secondary-font-stack;
+      color: $placeholder-color;
+      @include font-settings(15px, 24px, 300);
+      font-style: italic;
+    }
+  }
+
+  &__button {
+    height: 40px;
+    width: 150px;
+    border: none;
+    font: 700 14px/17px $main-font-stack;
+    background-color: #95e1d3;
+  }
+}

@@ -1,0 +1,11 @@
+.page-header {
+  text-align: center;
+  min-height: 1000px;
+  background: linear-gradient(
+      rgba(243, 129, 129, 0.9),
+      rgba(252, 227, 138, 0.9)
+    ),
+    url(../images/falcon-bgi.jpg);
+  @include bg-position();
+  margin-bottom: 44px;
+}

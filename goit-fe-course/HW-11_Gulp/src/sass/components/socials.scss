@@ -1,0 +1,25 @@
+.socials {
+  width: 223px;
+  height: 55px;
+  z-index: -1;
+  @include center-flex('all');
+  flex-wrap: nowrap;
+  align-content: center;
+  position: absolute;
+  color: $primary-accent-color;
+  background-color: $secondary-accent-color;
+
+  &__icon {
+    fill: $primary-accent-color;
+    display: block;
+    height: 56px;
+    width: 56px;
+    padding: 13px;
+
+    &:hover {
+      transition: all 200ms linear;
+      background-color: $primary-accent-color;
+      fill: $primary-white-color;
+    }
+  }
+}

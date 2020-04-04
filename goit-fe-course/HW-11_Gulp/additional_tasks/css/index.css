@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+header {
+  margin-left: 2%;
+}
+
+.link {
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.list {
+  list-style: none;
+}
+
+.return {
+  transition: all 1s linear;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.to-top-btn {
+  text-decoration: none;
+  color: #fff;
+  line-height: 60px;
+}
+
+@media (max-width: 1024px) {
+  .return {
+    transition: all 1s linear;
+    width: 25px;
+    height: 26px;
+    bottom: 5px;
+    right: 5px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .to-top-btn {
+    line-height: 25px;
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: darkblue;
+}
+
+h2 {
+  color: rgb(255, 155, 41);
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: green;
+  text-transform: uppercase;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.code-block {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 20px;
+  background-color: black;
+}
+/* NAVIGATION */
+
+nav {
+  margin: 0 auto;
+}
+
+.nav-ul {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.nav-ul li {
+  margin-left: 20px;
+  margin-bottom: 5px;
+  background-color: #cc2222;
+}
+
+.nav-ul li:hover {
+  transition: transform 500ms ease-out, background-color 500ms ease,
+    border-radius 200ms linear;
+  transform: scale(1.2);
+  background-color: lightseagreen;
+  border-radius: 30%;
+}
+
+.nav-ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  width: 200px;
+  height: 30px;
+}
+
+/* TASK ITEMS */
+
+article > p,
+article > ol,
+article > ul {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+article > ul {
+  margin-left: 30px;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* TASK1 */
+
+.task1 {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+/* TASK2 */
+
+.task2 {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+/* TASK3 */
+
+.task3 {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+
+/* TASK4 */
+
+.task4 {
+}
