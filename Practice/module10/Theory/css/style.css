@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css?family=Overlock");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* flex-flow: row wrap; */
+  /* justify-content: flex-end; */
+  /* justify-content: space-between; */
+  justify-content: center;
+  /* justify-content: space-around; */
+  /* align-items: stretch; */
+  /* align-content: center; */
+
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+  height: 100%;
+}
+
+caption, h4{
+  margin: 15px 0;
+}
+
+table,
+td,
+th,
+tr {
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+td {
+  text-align: left;
+}
+
+td:nth-of-type(2) {
+  font-family: cursive;
+}
+
+th[colspan="5"],
+th[rowspan="5"] {
+  background-color: rgba(182, 52, 52, 0.719);
+}
+
+tr:nth-of-type(odd) {
+  background-color: rgb(255, 206, 72);
+}
+
+.table-progress {
+  margin-top: 20px;
+  background-color: burlywood;
+}
+
+/* Table Generator */
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.tg td {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: black;
+}
+.tg th {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: black;
+}
+.tg .tg-6bac {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 14px;
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-vmxo {
+  font-size: 16px;
+  text-align: right;
+  vertical-align: top;
+}
+.tg .tg-eftv {
+  border-color: #ffcb2f;
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-0lax {
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-j0qd {
+  font-weight: bold;
+  color: #646809;
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-kd4e {
+  background-color: #34ff34;
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-1o2v {
+  font-size: 13px;
+  font-family: Impact, Charcoal, sans-serif !important;
+  color: #fe0000;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* 4. Формы */
+
+
+.form-wrapper {
+  background-color: moccasin;
+  margin: auto;
+  width: auto;
+  height: auto;
+  padding: 20px;
+}
+
+.form-theory {
+  font-family: 'Overlock', cursive;
+  font-size: 20px;
+}
+
+.input-theory { 
+  line-height: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 5px;
+  text-indent: 6px;
+  width: auto;
+  box-shadow: 5px 5px 10px magenta;
+}
+
+.input-theory {
+  padding: 0 10px;
+  height: 34px;
+  width: auto;
+  background-color: gold;
+  box-shadow: 5px 5px 10px magenta;
+  color: #eee;
+}
+input:hover {
+  box-shadow: 5px 5px 10px mediumblue;
+  background-color: limegreen;
+  cursor: pointer;
+}
+
+
+form input[type="text"]::placeholder {
+  color: gold;
+  font-style: italic;
+}
+
+/* Квест ФОРМЫ */
+
+.form-quest {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-title {
+  display: block;
+  margin: 15px 0;
+}
+
+input[type="checkbox"] {
+  margin: 0 10px;
+}
+
+.input-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
