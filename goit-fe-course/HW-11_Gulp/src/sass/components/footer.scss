@@ -1,4 +1,5 @@
 .footer {
+  @extend %container;
   align-self: flex-end;
   align-content: center;
   height: 62px;

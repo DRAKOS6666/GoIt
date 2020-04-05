@@ -4,6 +4,7 @@
 
 @import 'normalize.scss';
 @import './helpers/variabless';
+@import './helpers/placeholders';
 @import './helpers/mixins.scss';
 
 @import 'base.scss';
@@ -11,15 +12,13 @@
 // Components
 @import './components/button';
 @import './components/logo';
-@import './components/link';
-@import './components/list';
-@import './components/container';
 @import './components/flex-container';
 
 @import './components/page-header';
 @import './components/site-navigation';
 @import './components/list-title';
 @import './components/banner';
+@import './components/services-list';
 @import './components/service-items';
 @import './components/team-item';
 @import './components/photo-wrapper';
